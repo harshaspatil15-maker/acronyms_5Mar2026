@@ -21,7 +21,7 @@ app.post("/save" ,(req, res) =>{
                                    else if(response.length === 0)
                                              res.send({message : "Sorry, full form not available."});
                                     else
-                                           res.send(response);
+                                            res.send(response[0]);
                                 });
 });
 
@@ -29,3 +29,4 @@ app.post("/save" ,(req, res) =>{
 app.listen(9000, ()=>{ console.log("ready @9000");});
 
                            
+
