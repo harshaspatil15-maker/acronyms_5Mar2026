@@ -8,9 +8,9 @@ app.use(express.json());
 
 const con = mysql.createConnection({
                       host : "sql12.freesqldatabase.com",
-                     user : " sql12818994",
+                     user : "sql12818994",
                      password : "1ZqCew5DLf",
-                     database: " sql12818994"
+                     database: "sql12818994"
                });
 
 app.post("/save" ,(req, res) =>{
@@ -27,4 +27,5 @@ app.post("/save" ,(req, res) =>{
 
 
 app.listen(9000, ()=>{ console.log("ready @9000");});
+
                            
